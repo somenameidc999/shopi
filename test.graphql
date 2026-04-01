@@ -1,0 +1,19 @@
+query productVariant {
+    productVariants(first: 10) {
+        nodes {
+            sku
+            sellingPlanGroups(first: 5) {
+                nodes {
+                    id
+                    name
+                    sellingPlans(first: 5) {
+                        nodes {
+                            id
+                            name
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

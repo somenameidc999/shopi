@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+*.tgz
+.sauna/
+.pi/
+SPEC.md
+extensions/
+specs
+justfile

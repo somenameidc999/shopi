@@ -1,0 +1,59 @@
+{
+	"name": "shopi",
+	"version": "0.0.1",
+	"description": "A Shopify Admin GraphQL CLI built on Bun",
+	"type": "module",
+	"license": "MIT",
+	"bin": {
+		"shopi": "dist/shopi.js"
+	},
+	"files": [
+		"dist",
+		"extensions"
+	],
+	"scripts": {
+		"build": "bun build bin/shopi.ts --target=bun --outfile dist/shopi.js && chmod +x dist/shopi.js",
+		"compile": "bun build bin/shopi.ts --compile --outfile dist/shopi-bin",
+		"prepublishOnly": "bun run build",
+		"test": "bun test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/somenameidc999/shopi.git"
+	},
+	"homepage": "https://github.com/somenameidc999/shopi",
+	"bugs": {
+		"url": "https://github.com/somenameidc999/shopi/issues"
+	},
+	"keywords": [
+		"shopify",
+		"cli",
+		"admin",
+		"graphql",
+		"bun",
+		"pi-package"
+	],
+	"pi": {
+		"extensions": [
+			"./extensions"
+		]
+	},
+	"engines": {
+		"bun": ">=1.3.0"
+	},
+	"dependencies": {
+		"graphql": "^16.0.0"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"@mariozechner/pi-coding-agent": "*",
+		"typescript": "^5.9.3"
+	},
+	"peerDependenciesMeta": {
+		"@mariozechner/pi-coding-agent": {
+			"optional": true
+		}
+	}
+}
