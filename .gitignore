@@ -12,4 +12,5 @@ tests/e2e/.state.json
 SPEC.md
 specs
 justfile
-.claude/
+CLAUDE.md
+.claude/tsc-cache/
