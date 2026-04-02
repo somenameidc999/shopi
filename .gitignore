@@ -6,6 +6,7 @@ dist/
 .DS_Store
 *.log
 *.tgz
+tests/e2e/.state.json
 .sauna/
 .pi/
 SPEC.md

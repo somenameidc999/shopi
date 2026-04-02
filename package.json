@@ -14,7 +14,12 @@
 		"build": "bun build bin/shopi.ts --target=bun --outfile dist/shopi.js && chmod +x dist/shopi.js",
 		"compile": "bun build bin/shopi.ts --compile --outfile dist/shopi-bin",
 		"prepublishOnly": "bun run build",
-		"test": "bun test"
+		"test": "bun test tests/validate.test.ts",
+		"test:e2e": "bun test tests/e2e/",
+		"test:e2e:cleanup": "SHOPI_E2E_CLEANUP=1 bun test tests/e2e/",
+		"e2e": "bun run tests/e2e/run.ts",
+		"e2e:cleanup": "bun run tests/e2e/run.ts --cleanup",
+		"e2e:full": "bun run tests/e2e/run.ts --full"
 	},
 	"repository": {
 		"type": "git",
