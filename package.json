@@ -8,7 +8,9 @@
 		"shopi": "dist/shopi.js"
 	},
 	"files": [
-		"dist/shopi.js"
+		"dist/shopi.js",
+		"extensions",
+		"skills"
 	],
 	"scripts": {
 		"build": "bun build bin/shopi.ts --target=bun --outfile dist/shopi.js && chmod +x dist/shopi.js",
@@ -37,7 +39,10 @@
 		"bun",
 		"pi-package"
 	],
-	"pi": {},
+	"pi": {
+		"extensions": ["./extensions"],
+		"skills": ["./skills"]
+	},
 	"engines": {
 		"bun": ">=1.3.0"
 	},

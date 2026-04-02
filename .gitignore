@@ -10,6 +10,6 @@ tests/e2e/.state.json
 .sauna/
 .pi/
 SPEC.md
-extensions/
 specs
 justfile
+.claude/
